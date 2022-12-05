@@ -1,9 +1,5 @@
 <br />
 <div align="center">
-  <a href="https://img2.freepng.fr/20180522/isz/kisspng-email-spam-computer-icons-5b039e031d0b91.449717591526963715119.jpg">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
-  </a>
-
   <h3 align="center">Spam Base Project</h3>
 
   <p align="center">
@@ -11,12 +7,18 @@
 </div>
 
 
+## Problematic
+
+Predict whenever a mail is a spam or not.
+
+
+
 ## Tasks
 
 - [x] Preprocess Data
 - [x] Analyse Data
 - [x] Data visualizations
-- [x] Create Machine Learning Models
+- [x] Apply Machine Learning Models
     - [x] Logistic Regression
     - [x] Support Vector Machine
     - [x] Random Forest
@@ -24,10 +26,9 @@
 - [x] Django API
 
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- ABOUT THE PROJECT -->
-## Our Conclusion
+## Our Conclusions
 
 Thanks to this project we could apply what we learned during the practical work and applied different conceptes seen in class such as :
 
@@ -41,16 +42,15 @@ But we alse learned new concepts thanks to this project such as :
 2. The collaborative plateform GitHub 
 3. Working in a team  
 
+### Result
 
+The best model to predict whenever a mail is a spam is the Random Forest Model with an accuracy of 95% that we applied to the Django API
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-<!-- CONTRIBUTING -->
+<!-- DATA -->
 ## Data 
 
 The data set is from https://archive.ics.uci.edu/ml/datasets/Spambase.
-Its a dataset that contains different attributes such as the frequencies of a word, total number of capital letters. Linked to a label that tells us if its a spam or not.
+Its a dataset that contains different attributes such as the frequencies of a word, total number of capital letters, Linked to a label that tells us if its a spam or not.
 
 it contains:
 
@@ -63,4 +63,3 @@ it contains:
 
 
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
