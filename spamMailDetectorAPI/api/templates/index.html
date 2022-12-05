@@ -1,0 +1,30 @@
+{% load static %}
+
+<html>
+    <head>
+        <title>SpamDetect</title>
+        <link rel="stylesheet" href="{% static 'styles.css' %}" />
+    </head>
+    <body>
+        <h1>Mail Spam Detector</h1>
+        <p>We created a Machine Learning model to help you identify fraudulent mails</p>
+        <p>Paste your mail in the box below to see if its a spam or not (only works with english language)</p>
+        <form action="" method="post" novalidate>
+            {% csrf_token %}
+            {{ mail.as_p }}
+            <button id="submit" type="submit">Submit</button>
+        </form>
+        {% if messages %}
+            <ul class="messages">
+                {% for message in messages %}
+                    {% if "It's not a spam" in message.message %}
+                    <h3 style="background-color:green;"> {{ message }} </h3>
+                    {% else %}
+                    <h3 style="background:red;"> {{ message }} </h3>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+        {% endif %}
+
+    </body>
+</html>

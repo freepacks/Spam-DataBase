@@ -1,0 +1,55 @@
+:root {
+    --color-white: #f3f3f3;
+    --color-darkblue: #1b1b32;
+    --color-darkblue-alpha: rgba(27, 27, 50, 0.8);
+    --color-green: #37af65;
+}
+
+body{
+  background: linear-gradient(115deg,rgba(58, 58, 158, 0.8),rgba(136, 136, 206, 0.7));
+  text-align: center;
+  color:white;
+  font-weight: 400;
+}
+
+h1{
+    padding-bottom: 50px;
+}
+
+form{
+  font-size:1.4rem;
+  background:var(--color-darkblue);
+  text-align:justify;
+  margin:0 25% 0 25%;
+  border-radius:10px;
+  display:block;
+  padding:3%;
+}
+
+
+input, button, select, textarea {
+  width:100%;
+  height:1.75rem;
+  border-radius:0.25rem;
+  border:1px;
+  font-size:1.2rem;
+  margin:0;
+}
+
+
+textarea{
+  height:10rem;
+}
+
+#submit{
+  background:var(--color-green);
+  color:white;
+}
+
+h3{
+    display:block;
+
+    margin:0 40% 0 40%;
+    border-radius:0.25rem;
+    padding:1px;
+}
